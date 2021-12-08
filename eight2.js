@@ -1,4 +1,4 @@
-const { input: lines } = require('./data/seven-digits.data');
+const { input: lines } = require('./data/eight.data');
 
 const run = () => {
     let total = 0;
