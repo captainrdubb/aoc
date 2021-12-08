@@ -1,4 +1,4 @@
-const { lines } = require("./data/lines.data");
+const { lines } = require("./data/five.data");
 
 const run = () => {
     const matrix = [];

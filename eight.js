@@ -1,4 +1,4 @@
-const { input: lines } = require('./data/seven-digits.data');
+const { input: lines } = require('./data/eight.data');
 
 2, 4, 3, 7
 

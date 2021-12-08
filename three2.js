@@ -1,5 +1,5 @@
 const { sumBy } = require('lodash')
-const { signals } = require('./data/clever-bits-data')
+const { signals } = require('./data/three.data')
 
 // To find oxygen generator rating, determine the most common value (0 or 1) in the current bit position,
 // and keep only numbers with that bit in that position. If 0 and 1 are equally common,

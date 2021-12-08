@@ -1,4 +1,4 @@
-const { positions } = require('./data/crabs.data')
+const { positions } = require('./data/seven.data')
 
 const sum = (value) => {
     let sum = 0;

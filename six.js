@@ -1,4 +1,4 @@
-const { fish: ancestors } = require('./data/lanternfish.data')
+const { fish: ancestors } = require('./data/six.data')
 
 const log = false;
 

@@ -1,4 +1,4 @@
-const { positions } = require('./data/crabs.data')
+const { positions } = require('./data/seven.data')
 
 const run = () => {
     let leastSteps = Number.POSITIVE_INFINITY;

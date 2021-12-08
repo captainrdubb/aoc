@@ -1,4 +1,4 @@
-const { boards, inputs } = require('./data/bingo.data')
+const { boards, inputs } = require('./data/four.data')
 
 const run = () => {
     //iterate input
