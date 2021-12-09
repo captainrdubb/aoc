@@ -1,9 +1,9 @@
-const { testFish: fishies } = require('./data/six.data')
+const { fish: fishies } = require('./data/six.data')
 
 //I love this one!!
 
 const run = () => {
-    const observedDays = 256;
+    const observedDays = 1000;
     const daysToFirstBirth = 9;
     const daysToRemainingBirths = 7;
     const dueDays = Array.from({ length: daysToFirstBirth }, () => 0);

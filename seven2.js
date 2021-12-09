@@ -1,13 +1,5 @@
 const { positions } = require('./data/seven.data')
 
-const sum = (value) => {
-    let sum = 0;
-    for (let i = 0; i < value; ++i) {
-        sum += value - i;
-    }
-    return sum;
-}
-
 const run = () => {
     let leastSteps = Number.POSITIVE_INFINITY;
     let maxPosition = positions.reduce((previous, current) => Math.max(previous, current), 0);
