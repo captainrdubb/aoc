@@ -27,7 +27,6 @@ const run = () => {
 
                 if (value !== 9) {
                     basin++;
-                    if (i === 0 && j === 5) console.log(value)
                     const adjacents = getAdjacents(row, col, visited);
                     adjacents.forEach(adj => points.push(adj))
                 }
