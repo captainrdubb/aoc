@@ -36,5 +36,3 @@ const run = () => {
 }
 
 module.exports = run();
-
-// why won't shrimps share their treasure? because they're shellfish

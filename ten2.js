@@ -17,7 +17,6 @@ const points = new Map([
 
 
 const run = () => {
-    //iterate test input
     const scores = [];
     const corrupt = new Set();
     lines.forEach((input, inputIndex) => {
@@ -45,4 +44,4 @@ const run = () => {
 module.exports = run();
 
 
-// why won't shrimps share their treasure? because they're shellfish
+// why won't shrimp share their treasure? because they're shellfish
