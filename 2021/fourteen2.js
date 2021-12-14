@@ -1,4 +1,4 @@
-const { input:testInput } = require('./data/fourteen.data');
+const { input: testInput } = require('./data/fourteen.data');
 
 const run = () => {
     const counts = Array.from({ length: 64 + 27 }, () => 0);
@@ -19,7 +19,7 @@ const run = () => {
     for (let step = 0; step < steps; ++step) {
         const temp = new Map(pairs);
         temp.forEach((count, key) => {
-            if(count === 0) return;
+            if (count === 0) return;
 
             const insert = rules.get(key);
             if (!insert) return;
@@ -43,7 +43,8 @@ const run = () => {
         minimumCount = Math.min(minimumCount, c);
     })
 
-    console.log(maximumCount - minimumCount)
+    const totalChars = counts.reduce((previous, current) => previous + current, 0);
+    console.log('Difference: %d, Pairs: %d, Chars: %d', maximumCount - minimumCount, pairs.size, totalChars);
 }
 
 module.exports = run();
