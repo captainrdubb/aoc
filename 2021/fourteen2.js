@@ -1,17 +1,5 @@
 const { input:testInput } = require('./data/fourteen.data');
 
-const insertChar = (pair, rules, counts, depth, stop) => {
-    if (depth === stop) return;
-
-    const insert = rules.get(pair);
-    if (!insert) return;
-
-    counts[insert.charCodeAt(0)]++;
-    insertChar(pair[0] + insert, rules, counts, depth + 1, stop);
-    insertChar(insert + pair[1], rules, counts, depth + 1, stop);
-}
-
-
 const run = () => {
     const counts = Array.from({ length: 64 + 27 }, () => 0);
     let pairs = new Map();
