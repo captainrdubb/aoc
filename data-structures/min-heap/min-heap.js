@@ -1,4 +1,4 @@
-parent = (index) => (index - 1) >>> 2;
+parent = (index) => (index - 1) >>> 1;
 
 left = (index) => index * 2 + 1;
 
