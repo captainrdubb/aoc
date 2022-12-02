@@ -3,11 +3,11 @@
 // total calories
 // who has the most calories?
 const { Heap } = require('mnemonist');
-const { parseArrayOfArrays } = require('../parse-list');
+const { parseArrayOfArrays } = require('../helpers');
 const { resolve } = require('path');
 
 const whoHasTheMostCalories = async () => {
-    const data = await parseArrayOfArrays(resolve(__dirname, '1201_1.data.txt'), parseInt);
+    const data = await parseArrayOfArrays(resolve(__dirname, '1201.data.txt'), parseInt);
 
     const heap = new Heap((a, b) => {
         return b.total - a.total;
