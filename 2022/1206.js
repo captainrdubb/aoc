@@ -1,9 +1,10 @@
 const { readFileSync } = require('fs');
+const { LinkedList } = require('mnemonist');
 
 const findHeader = () => {
     const stream = readFileSync('./1206_data.txt', 'utf-8').toString();
     let cache = new Map();
-    let window = [];
+    let window = new LinkedList();
     for (let i = 0; i < 14; ++i) {
         cache.set(stream[i], (cache.get(stream[i]) || 0) + 1);
         window.push(stream[i]);
