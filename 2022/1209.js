@@ -1,10 +1,4 @@
-const { writeFileSync } = require('fs');
 const { parseArray } = require('../helpers');
-
-const moveUp = (H) => H[1]++;
-const moveDown = (H) => H[1]--;
-const moveLeft = (H) => H[0]--;
-const moveRight = (H) => H[0]++;
 
 const adjustT = (H, T) => {
     const isAbove = H[1] > T[1];
