@@ -23,13 +23,13 @@ const adjustT = (H, T) => {
 const move = (dir, H) => {
     switch (dir) {
         case 'U':
-            return moveUp(H);
+            return H[1]++;
         case 'D':
-            return moveDown(H);
+            return H[1]--;
         case 'L':
-            return moveLeft(H);
+            return H[0]--;
         case 'R':
-            return moveRight(H);
+            return H[0]++;
     }
 };
 
